@@ -13,6 +13,11 @@
 
 }
 
+.navbar-expand-lg .navbar-collapse {
+
+    justify-content: space-evenly;
+}
+
 .Main-Title {
 
     border: 2px solid black;
@@ -147,6 +152,7 @@
         width: 101%;
     }
 }
+
 
 .Home {
 
@@ -292,6 +298,30 @@
     color: #138086;
 }
 
+.F-Social-Media {
+
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+}
+
+@media screen and (max-width:426px) {
+
+    .F-Social-Media {
+
+        display: flex;
+        right: 100px;
+        bottom: 230px;
+    }
+}
+
+.F-Social-Media div {
+
+    margin-bottom: 15px;
+}
+
+
+
 .Second-Section {
 
     width: 100%;
@@ -315,6 +345,8 @@
     left: 220px;
 
 }
+
+
 
 .About-Image img {
 
@@ -376,6 +408,12 @@
     font-weight: 300;
 }
 
+.Dotted {
+
+    right: 256px !important;
+    bottom: 279px !important;
+}
+
 .Third-Section {
 
     width: 100%;
@@ -431,7 +469,7 @@
 
     font-weight: bold;
     color: #138086;
-
+    font-size: 30px;
 }
 
 .Service-Text p {
@@ -543,7 +581,7 @@
 
 
     width: 100%;
-    height: 660px;
+    height: 800px;
     background-color: #f5fafa;
 }
 
@@ -585,9 +623,65 @@
     }
 }
 
+.Ticnical-Skills {
+
+    width: 30%;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+}
+
+.Soft-Skills {
+
+    width: 30%;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+
+
+@media screen and (max-width:426px) {
+
+    .Ticnical-Skills {
+        display: block;
+        width: 90%;
+        margin-right: 20%;
+        position: static;
+    }
+
+    .Soft-Skills {
+        display: block;
+        width: 90%;
+        margin-bottom: 93px;
+        position: static;
+    }
+
+    .Ticnical-Skills h5,
+    .Soft-Skills h5 {
+
+        font-size: 11px;
+    }
+
+}
+
+
+.Prog-holder {
+
+    margin-bottom: 10px;
+}
+
 .Skills-Text {
 
-    margin-bottom: 80px;
+    position: relative;
+    top: -420px;
+}
+
+@media screen and (max-width:426px) {
+
+    .Skills-Text {
+        top: -50px;
+
+    }
 }
 
 .Skills-Text h4 {
@@ -627,9 +721,10 @@
 
 .All-Skills {
 
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
 
 }
 
@@ -643,10 +738,7 @@
 
 }
 
-.Prog-holder {
 
-    width: 100%;
-}
 
 .Prog {
 
@@ -793,6 +885,11 @@
 
 }
 
+.Social {
+
+    margin-left: 72px;
+}
+
 @media screen and (max-width:426px) {
 
     .Sixth-Section {
@@ -892,15 +989,15 @@ input {
 
     font-weight: bold;
     text-transform: uppercase;
-    color: #E7F2F3;
-    background-color: black;
+    background-color: #138086;
+    color: white;
     transition: 0.5s;
 }
 
 .Button-Contact:hover {
+    color: #E7F2F3;
+    background-color: black;
 
-    background-color: #138086;
-    color: white;
 }
 
 .Contact-Form h6 {
@@ -948,9 +1045,14 @@ input {
     color: white;
     display: flex;
     position: relative;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: flex-start;
     top: 30%;
+    justify-content: flex-end;
+}
+
+.Footer div {
+
+    margin-right: 50px;
 }
 
 @media screen and (max-width:426px) {
@@ -1055,6 +1157,46 @@ input {
 @media screen and (max-width:426px) {
 
     .Social {
+
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:426px) {
+
+    .Social-Media {
+
+        text-align: center;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:426px) {
+
+    .Contact-Details {
+
+
+        margin-top: 20px;
+        margin-left: 80px;
+        width: 50%;
+    }
+
+    .Contact-Details p {
+
+        margin-top: 12px;
+    }
+
+}
+
+@media screen and (max-width:426px) {
+
+    .Text-Footer {
+
 
         text-align: center;
     }
